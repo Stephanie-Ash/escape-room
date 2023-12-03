@@ -1,0 +1,72 @@
+body {
+    background-image: url(../images/circuitry.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Nova Square', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timer-area {
+    padding: 10px;
+}
+
+.count-digit {
+    color: #ffffff;
+    background-color: #333;
+    font-size: 56px;
+    padding: 10px 20px;
+    text-shadow: 0 1px 0 white;
+    border-radius: 10%;
+}
+
+.separator {
+    font-size: 56px;
+    color: white;
+}
+
+.options {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.locator-area {
+    background-color: rgb(229, 234, 242);
+    width: 80%;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 4px solid black;
+}
+
+.console-area {
+    background-color: black;
+    width: 80%;
+    height: 30%;
+    box-sizing: border-box;
+    overflow: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    border-radius: 5px;
+    border: 2px solid white;
+}
+
+.console {
+    padding: 5px;
+    color: limegreen;
+}
+
+.boxes {
+    width: 80%;
+    border-radius: 5px;
+}
+
+.input-col {
+    text-align: center;
+}

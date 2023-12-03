@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Escape Room</title>
+</head>
+
+<body>
+    <section class="timer-area">
+        <div>
+            <span class="count-digit">0</span>
+            <span class="count-digit">1</span>
+            <span class="separator">:</span>
+            <span class="count-digit">0</span>
+            <span class="count-digit">0</span>
+        </div>
+        <div class="options">
+            <button id="start-timer">
+                <i class="fas fa-play"></i>
+            </button>
+        </div>
+        <audio id="alarm_audio"></audio>
+    </section>
+
+    <section class="locator-area">
+        <div class="container-fluid text-center">
+            <h2 class="pt-2">Input Door Code</h2>
+            <div class="row my-5">
+                <div class="input-col col-4">
+                    <input class="boxes" type="text" id="code-1" onfocus="this.select()">
+                </div>
+                <div class="input-col col-4">
+                    <input class="boxes" type="text" id="code-2" onfocus="this.select()">
+                </div>
+                <div class="input-col col-4">
+                    <input class="boxes" type="text" id="code-3" onfocus="this.select()">
+                </div>
+            </div>
+            <div class="row my-5">
+                <div class="input-col col-4 offset-2">
+                    <input class="boxes" type="text" class="input-box" id="code-4">
+                </div>
+                <div class="input-col col-4">
+                    <input class="boxes" type="text" class="input-box" id="code-5">
+                </div>
+            </div>
+        </div>
+        <div class="row my-2">
+            <div class="col text-center">
+                <button data-type="submit" class="btn btn-dark" id="submit">Submit</button>
+                <button data-type="reset" class="btn btn-dark" id="reset">Reset</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="console-area">
+        <div class="console" id="result-console">
+            <p>Waiting for door code...</p>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+        </script>
+
+    <script src="https://kit.fontawesome.com/2891f43577.js" crossorigin="anonymous"></script>
+
+    <script src="assets/js/timer.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
