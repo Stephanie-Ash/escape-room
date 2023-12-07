@@ -39,21 +39,21 @@
             <h2 class="pt-2">Input Door Code</h2>
             <div class="row my-5">
                 <div class="input-col col-4">
-                    <input class="boxes" type="text" id="code-1" onfocus="this.select()">
+                    <input class="boxes" type="text" id="code-1" placeholder="enter">
                 </div>
                 <div class="input-col col-4">
-                    <input class="boxes" type="text" id="code-2" onfocus="this.select()">
+                    <input class="boxes" type="text" id="code-2" placeholder="the">
                 </div>
                 <div class="input-col col-4">
-                    <input class="boxes" type="text" id="code-3" onfocus="this.select()">
+                    <input class="boxes" type="text" id="code-3" placeholder="door">
                 </div>
             </div>
             <div class="row my-5">
                 <div class="input-col col-4 offset-2">
-                    <input class="boxes" type="text" class="input-box" id="code-4">
+                    <input class="boxes" type="text" class="input-box" id="code-4" placeholder="code">
                 </div>
                 <div class="input-col col-4">
-                    <input class="boxes" type="text" class="input-box" id="code-5">
+                    <input class="boxes" type="text" class="input-box" id="code-5" placeholder="here">
                 </div>
             </div>
         </div>
@@ -65,10 +65,12 @@
         </div>
     </section>
 
-    <section class="console-area">
+    <section class="console-area" id="scroll-console">
         <div class="console" id="result-console">
             <p>Waiting for door code...</p>
         </div>
+        <audio id="wrong-audio"></audio>
+        <audio id="success-audio"></audio>
     </section>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

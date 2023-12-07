@@ -57,9 +57,21 @@ body {
     border: 2px solid white;
 }
 
+.console-area::-webkit-scrollbar {
+    display: none;
+}
+
 .console {
     padding: 5px;
     color: limegreen;
+}
+
+.console > p {
+    margin-bottom: 0;
+}
+
+.wrong-code {
+    color: red;
 }
 
 .boxes {
