@@ -8,7 +8,7 @@ const startAction = document.getElementById("start-timer");
 const timeoutAudio = document.getElementById("alarm_audio");
 
 // Default inital value of timer
-const defaultValue = 1 * 60;
+const defaultValue = 4.5 * 60;
 
 // variable to the time
 var countDownTime = defaultValue;

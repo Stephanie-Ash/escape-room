@@ -21,6 +21,9 @@ body {
     padding: 10px 20px;
     text-shadow: 0 1px 0 white;
     border-radius: 10%;
+    display: inline-block;
+    width: 80px;
+    text-align: center;
 }
 
 .separator {
